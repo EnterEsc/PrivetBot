@@ -1,7 +1,5 @@
 import requests
 
-url = "https://api.telegram.org/bot576459441:AAEDwRC3FX8SRSM7q-PMaWeuVRZL4u664tM/"
-
 def get_updates_json(request):
     response = requests.get(request + 'getUpdates')
     print(response)
