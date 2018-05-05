@@ -2,7 +2,8 @@ import requests
 from time import sleep
 
 def get_updates_json(request):
-    response = requests.get(request + 'getUpdates')
+    params = {'timeout': 100, 'offset': None}
+    response = requests.get(request + 'getUpdates',data=params)
     print(response)
     return response.json()
 
