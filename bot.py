@@ -27,7 +27,23 @@ def main():
     update_id = last_update(get_updates_json(url))['update_id']
     while True:
 	if update_id == last_update(get_updates_json(url))['update_id']:
-	    send_mess(get_chat_id(last_update(get_updates_json(url))), 'test')
+	    aa = random.randint(0,7)
+	    if aa == 0:
+	        send_mess(get_chat_id(last_update(get_updates_json(url))), 'Привет')
+	    if aa == 1:
+                send_mess(get_chat_id(last_update(get_updates_json(url))), 'Приветули')
+	    if aa == 2:
+                send_mess(get_chat_id(last_update(get_updates_json(url))), 'Приветик')
+	    if aa == 3:
+                send_mess(get_chat_id(last_update(get_updates_json(url))), 'Салют!')
+	    if aa == 4:
+                send_mess(get_chat_id(last_update(get_updates_json(url))), 'Приветствую')
+	    if aa == 5:
+                send_mess(get_chat_id(last_update(get_updates_json(url))), 'Здравствуй')
+	    if aa == 6:
+                send_mess(get_chat_id(last_update(get_updates_json(url))), 'Ghbdtn')
+	    if aa == 7:
+                send_mess(get_chat_id(last_update(get_updates_json(url))), 'Добрового времени суток')
 	    update_id += 1
 	sleep(1)
 	   
