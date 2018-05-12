@@ -1,4 +1,6 @@
+# -*- coding: utf-8 -*-
 import requests
+import random
 from time import sleep
 
 def get_updates_json(request):
