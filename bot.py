@@ -1,4 +1,5 @@
--*- coding: utf-8 -*-    #PROSTO TAK
+#-*- coding: utf-8 -*-    
+#PROSTO TAK
 import requests
 import random
 from time import sleep
